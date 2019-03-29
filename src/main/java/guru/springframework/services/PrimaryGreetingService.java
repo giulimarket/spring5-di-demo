@@ -15,10 +15,10 @@ public class PrimaryGreetingService implements GreetingService {
     private GreetingRepository greetingRepository;
 
     public PrimaryGreetingService(GreetingRepository greetingRepository) {
-		this.greetingRepository = greetingRepository;
-	}
+        this.greetingRepository = greetingRepository;
+    }
 
-	@Override
+    @Override
     public String sayGreeting() {
         return greetingRepository.getEnglishGreeting();
     }
